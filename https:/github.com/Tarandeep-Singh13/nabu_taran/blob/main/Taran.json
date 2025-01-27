@@ -1,0 +1,81 @@
+{
+  "dataplace_details" : [
+    {
+      "dataplace_name" : "Postgres_mt24002",
+      "schema_name" : "public",
+      "filters_list" : [
+        {
+          "filter_type_id" : 5,
+          "filter_name" : "static",
+          "filter_value" : [
+            "tarandeep"
+          ],
+          "filter_type" : "Static",
+          "priority_order" : 1
+        }
+      ],
+      "filter_all_tables_views" : [
+        "T",
+        "V",
+        "M"
+      ],
+      "table_count" : 1,
+      "deleted_object_ids" : {
+        "schema_ids" : [],
+        "dataplace_ids" : []
+      }
+    }
+  ],
+  "datastore_details" : [
+    {
+      "datastore_name" : "Data_Domain",
+      "datastore_info" : {
+        "owner" : "",
+        "description" : "",
+        "email" : [
+          "tarandeep.singh@modak.com"
+        ]
+      },
+      "is_active" : true,
+      "description" : "",
+      "indexing_frequency" : null,
+      "profiling_frequency" : null,
+      "indexing_flow_details" : {
+        "parallel_source_connections" : 10,
+        "delay_retry_time" : 0,
+        "retry_count" : 3,
+        "flow_timeout" : 72,
+        "is_exponential_delay" : false
+      },
+      "profiling_flow_details" : {
+        "parallel_source_connections" : 10,
+        "delay_retry_time" : 0,
+        "retry_count" : 3,
+        "flow_timeout" : 72,
+        "is_exponential_delay" : false
+      },
+      "smart_run" : false,
+      "filter_resolving_frequency" : null,
+      "connection_type" : "postgres",
+      "permission" : [
+        "Reviewer"
+      ],
+      "indexing_configuration" : {
+        "compute_engine_name" : "training spark engine",
+        "workflow_engine_name" : "indexing_workflow_engine",
+        "priority" : "Default"
+      },
+      "filter_resolving_configuration" : {
+        "workflow_engine_name" : "curation_workflow_engine",
+        "priority" : "Default"
+      },
+      "profiling_configuration" : {
+        "compute_engine_name" : "training spark engine",
+        "workflow_engine_name" : "profiling_workflow_engine",
+        "exclude_sample_values" : false,
+        "priority" : "Default"
+      }
+    }
+  ],
+  "tags" : []
+}
